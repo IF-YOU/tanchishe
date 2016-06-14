@@ -95,8 +95,8 @@ $(function(){
 
 
 	// 点击选择行列
-	$('ul li[timerId]').bind('click',function(){
-		var row=Number($(this).attr('timerId'));
+	$('ul li[move]').bind('click',function(){
+		var row=Number($(this).attr('move'));
 		$('.active').removeClass('active');		
 		huachangjing();
 		fangshe();
