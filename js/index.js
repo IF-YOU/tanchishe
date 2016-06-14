@@ -111,7 +111,7 @@ $(function(){
 	$('ul li[data-cotroll]').bind('click',function(){
 		var str=$(this).attr('data-cotroll');
 		if(str==='kaishi'){
-			timerId=setInterval(move,200);
+			timerId=setInterval(move,400);
 		}else if(str==='zanting'){
 			clearInterval(timerId);
 		}else if(str==='restart'){
@@ -122,7 +122,7 @@ $(function(){
 			she.forEach(function(v){
 				$('#'+zb2id(v.x,v.y)).addClass('she');
 			});
-			setInterval(move,200);
+			setInterval(move,400);
 		}
 	})
 
